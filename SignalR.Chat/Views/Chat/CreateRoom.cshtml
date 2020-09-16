@@ -1,0 +1,9 @@
+﻿@model List<ChatRoom>
+@{
+    ViewData["Title"] = "Chat Rooms";
+}
+
+<form asp-action="CreateRoom" asp-controller="Chat" method="post">
+    <input type="text" name="roomName" placeholder="Room Name" />
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
